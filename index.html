@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ophelia 2800</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="painting-wrapper col-lg-10 offset-lg-1 col-xs-12">
+                <img class="img-fluid" src="img/1200.jpg" srcset="img/1200.jpg 1200w,
+                                                                  img/992.jpg 992w,
+                                                                  img/768.jpg 768w,
+                                                                  img/576.jpg 576w"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="player-wrapper col-md-6 offset-md-6 col-xs-12">
+            </div>
+        </div>
+        <div class="row">
+            <div class="links-wrapper col-md-2 offset-md-10 col-sm-12">
+                <a href="https://facebook.com/Ophelia2800/" target="_blank"><span class="social-link fa fa-facebook-official fa-2x"></span></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://myradiostream.com/webplayer/518161.js"></script>
+    <script>
+        $(function() {
+            $('[id^="player-frame-"]').removeAttr('style').prependTo('.player-wrapper');
+        });
+    </script>
+</body>
+
+</html>
