@@ -1,0 +1,67 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.container-fluid {
+    background: #000;
+}
+
+.painting-wrapper {
+    height: 70vh;
+}
+
+.painting-wrapper>img {
+    height: 100%;
+    width: 100%;
+}
+
+.player-wrapper {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 25vh;
+}
+
+.links-wrapper {
+    height: 5vh;
+    text-align: center;
+}
+
+.social-link {
+    color: #995c00;
+    display: block;
+    float: right;
+}
+
+.social-link:hover {
+    color: #e68a00;
+}
+
+[id^=player-frame-] {
+    width: 100%;
+    margin-top: 10px;
+}
+@media screen and (max-width: 992px) {
+    .img-fluid {
+        content: url('../img/992.jpg');
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img-fluid {
+        content: url('../img/768.jpg');
+    }
+    .social-link {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .img-fluid {
+        content: url('../img/576.jpg');
+    }
+}
